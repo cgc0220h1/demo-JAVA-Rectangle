@@ -16,7 +16,7 @@ public class Rectangle {
         }
 
         float area = width * height; {
-            System.out.println("Diện tích hình chữ nhật là: " + area);
+            System.out.println("Diện tích hình chữ nhật là:" + "\n" + area);
         }
     }
 }
