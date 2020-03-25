@@ -1,22 +1,37 @@
-import java.util.Scanner;
-
 public class Rectangle {
-    public static void main(String[] args) {
+    private int length;
+    private int width;
 
-        Scanner scanner = new Scanner(System.in);
+    public Rectangle(){
 
-        float width; {
-            System.out.println("Nhập vào chiều rộng: ");
-            width = scanner.nextFloat();
-        }
+    }
 
-        float height; {
-            System.out.println("Nhập vào chiều dài: ");
-            height = scanner.nextFloat();
-        }
+    public Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
 
-        float area = width * height; {
-            System.out.println("Diện tích hình chữ nhật là:" + "\n" + area);
-        }
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getArea() {
+        return this.width * this.length;
+    }
+
+    public String toString(){
+        return "Length: " + this.length + " | Width: " + this.width;
     }
 }
